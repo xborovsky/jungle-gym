@@ -1,0 +1,185 @@
+/* GENERAL STYLES */
+body {
+    background-image: url('./img/chrosti2.png');
+    background-repeat: no-repeat;
+    background-size: 100% 60vh;
+}
+
+@media (min-width: 768px) {
+    body {
+        background-size: 100% 100vh;
+    }
+}
+
+h2 {
+    text-align: center;
+    margin-bottom: 2rem;
+}
+/* ---------------- */
+
+/* LAYOUT */
+header {
+    margin-top: 10rem;
+    margin-bottom: 5rem;
+}
+
+@media (min-width: 768px) {
+    header {
+        margin-top: 2rem;
+        margin-bottom: 0;
+    }
+}
+
+.container,
+.container-fluid {
+    position: relative;
+}
+
+.container:not(:first-child),
+.container-fluid {
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+    padding-bottom: 1rem;
+}
+
+.container-fluid {
+    padding-left: 2rem;
+    padding-right: 2rem;
+}
+
+@media (min-width: 768px) {
+    .container:not(:first-child),
+    .container-fluid {
+        margin-top: 3rem;
+        margin-bottom: 2rem;
+        padding-bottom: 3rem;
+    }
+
+    .container-fluid {
+        padding-left: 5rem;
+        padding-right: 5rem;
+    }
+}
+/* ---------------- */
+
+/* NAVIGATION */
+.nav-item {
+    text-transform: uppercase;
+    font-weight: 600;
+}
+
+.nav-item a {
+    border-bottom: 2px solid transparent;
+}
+
+.nav-item a.active, .nav-item a:hover {
+    border-bottom: 2px solid #38a804;
+}
+
+.navbar-fixed-top {
+    top: 0;
+    position: fixed;
+    right: 0;
+    left: 0;
+    z-index: 1030;
+}
+
+.navbar-brand {
+    display : none;
+}
+
+.navbar-brand img {
+    height: 50px;
+}
+
+#navbar-container {
+    background-color: transparent !important;
+}
+
+#navbar-container.navbar-fixed-top {
+    background-color: white !important;
+}
+
+#navbar-container.navbar-fixed-top .navbar {
+    width: 100%;
+}
+
+#navbar-container.navbar-fixed-top .navbar-nav {
+    padding-left: 10px;
+}
+
+/* ---------------- */
+
+.logo {
+    width: 80vw;
+    margin: 0 auto;
+}
+
+@media (min-width: 768px) {
+    .logo {
+        width: 70vw;
+    }
+}
+
+@media (min-width: 992px) {
+    .logo {
+        width: 50vw;
+    }
+}
+
+@media (min-width: 1200px) {
+    .logo {
+        width: 40vw;
+    }
+}
+
+#map {
+    height: 400px;
+    width: 100%;
+}
+
+#contact-email {
+    unicode-bidi: bidi-override;
+    direction: rtl;
+}
+
+.contact-card .card-title {
+    text-align : center;
+}
+
+.map-container {
+    padding : 0;
+    margin-bottom: 0;
+}
+
+.footer-copyright {
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+}
+
+.info__bg {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: linear-gradient(#f59602, #fbba0c);
+    transform: skewY(-2deg);
+    transform-origin: top left;
+}
+
+.parties__bg {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: linear-gradient(#f59602, #fbba0c);
+    transform: skewY(2deg);
+    transform-origin: top right;
+}
+

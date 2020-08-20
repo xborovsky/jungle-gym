@@ -6,16 +6,13 @@ var menuDisplayHandler = (function() {
             showMobileMenu();
 
             $('.navbar-toggler, .nav-link').click(function() {
-                var $toggler = $('.navbar-toggler');
-                setTimeout(function() {
-                    if ($toggler.hasClass('collapsed')) {
-                        $('#navbar-container').addClass('transparent');
-                        $('.navbar-brand').addClass('hidden');
-                    } else {
-                        $('#navbar-container').removeClass('transparent');
-                        $('.navbar-brand').removeClass('hidden');
-                    }
-                }, 5);
+                if ($('#navbarSupportedContent').hasClass('show')) {
+                    $('#navbar-container').addClass('transparent');
+                    $('.navbar-brand').addClass('hidden');
+                } else {
+                    $('#navbar-container').removeClass('transparent');
+                    $('.navbar-brand').removeClass('hidden');
+                }
             });
         }
     };

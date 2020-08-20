@@ -3,6 +3,7 @@ body {
     background-image: url('./img/chrosti2.png');
     background-repeat: no-repeat;
     background-size: 100% 80vh;
+    background-color: #efefef;
 }
 
 @media (min-width: 768px) {

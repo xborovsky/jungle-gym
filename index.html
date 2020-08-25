@@ -23,8 +23,8 @@
             </div>
         </header>
         <div class="d-flex flex-column flex-md-row justify-content-center align-items-sm-center align-items-start p-3 px-md-4 mb-3 transparent" id="navbar-container">
-            <nav class="navbar navbar-expand-lg navbar-light justify-content-space-between" id="navbar">
-                <img src="img/logo_small.png" alt="Jungle Gym" class="navbar-brand hidden d-sm-none" width="70" />
+            <nav class="navbar navbar-expand-md navbar-light justify-content-space-between" id="navbar">
+                <img src="img/logo_small.png" alt="Jungle Gym" class="navbar-brand hidden d-md-none" width="70" />
                 <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
                     <span class="navbar-toggler-icon"></span>
                 </button>
@@ -249,8 +249,8 @@
         <footer class="bg-dark text-white">
             <div class="row">
                 <div class="col-12 col-sm-6">
-                    <a href="https://www.facebook.com/JungleGymUhrineves"><i class="fa fa-facebook-official fa-2 p-1" aria-hidden="true"></i></a>
-                    <a href="https://www.instagram.com/junglegymuhrineves"><i class="fa fa-instagram fa-2 p-1" aria-hidden="true"></i></a>
+                    <a href="https://www.facebook.com/JungleGymUhrineves"><i class="fa fa-facebook-official fa-2 p-2 pb-4 p-sm-1 pb-sm-1" aria-hidden="true"></i></a>
+                    <a href="https://www.instagram.com/junglegymuhrineves"><i class="fa fa-instagram fa-2 p-2 pb-4 p-sm-1 pb-sm-1" aria-hidden="true"></i></a>
                 </div>
                 <div class="footer-copyright col-12 col-sm-6">
                     © 2020 Copyright: Jungle gym
@@ -285,7 +285,13 @@
             $(function() {
                 $('#contact-email').attr('href', obfuscator.obfuscate('znvygb:uniyvprxyhxnf16@tznvy.pbz'));
 
+                var handleOrientationChange = function(e) {
+                    menuDisplayHandler.init(e);
+                };
+
                 menuDisplayHandler.init();
+
+                window.addEventListener("orientationchange", handleOrientationChange, true);
 
                 $(document).on('click', 'a[href^="#"]', function (event) {
                     event.preventDefault();

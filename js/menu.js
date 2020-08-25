@@ -1,8 +1,10 @@
 var menuDisplayHandler = (function() {
     var $navbarContainer = $('#navbar').parent();
 
-    var init = function() {
-        if ($(window).width() < 768) {
+    var init = function(e) {
+        $('.navbar-toggler, .nav-link').off('click');
+        var width = e ? e.target.screen.width : $(window).width();
+        if (width < 768) {
             showMobileMenu();
 
             $('.navbar-toggler, .nav-link').click(function() {
@@ -14,11 +16,20 @@ var menuDisplayHandler = (function() {
                     $('.navbar-brand').removeClass('hidden');
                 }
             });
+        } else {
+            hideMobileMenu();
+
+            $('#navbarSupportedContent').removeClass('transparent')
+            $('#navbar-container').addClass('show');
         }
     };
 
     var showMobileMenu = function() {
         $navbarContainer.addClass('navbar-fixed-top');
+    };
+
+    var hideMobileMenu = function() {
+        $navbarContainer.removeClass('navbar-fixed-top');
     };
 
     return {

@@ -114,27 +114,9 @@ header {
 /* ---------------- */
 
 .logo {
-    width: 80vw;
+    height: 30vh;
     margin: 0 auto;
     max-width: 444px;
-}
-
-@media (min-width: 768px) {
-    .logo {
-        width: 70vw;
-    }
-}
-
-@media (min-width: 992px) {
-    .logo {
-        width: 50vw;
-    }
-}
-
-@media (min-width: 1200px) {
-    .logo {
-        width: 40vw;
-    }
 }
 
 #map {
@@ -216,7 +198,13 @@ footer a:link {
 }
 
 .fa-2 {
-    font-size: 2em !important;
+    font-size: 3em !important;
+}
+
+@media (min-width: 768px) {
+    .fa-2 {
+        font-size: 2em !important;
+    }
 }
 
 .fa-4 {

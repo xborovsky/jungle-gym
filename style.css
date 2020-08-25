@@ -114,9 +114,39 @@ header {
 /* ---------------- */
 
 .logo {
-    height: 30vh;
+    width: 70vw;
     margin: 0 auto;
     max-width: 444px;
+}
+
+@media (min-width: 768px) {
+    .logo {
+        width: 70vw;
+    }
+}
+
+@media (min-width: 992px) {
+    .logo {
+        width: 50vw;
+    }
+}
+
+@media (min-width: 1200px) {
+    .logo {
+        width: 40vw;
+    }
+}
+
+@media (min-width: 768px) {
+    .logo {
+        width: 40vw;
+    }
+}
+
+@media (orientation: landscape) {
+    .logo {
+        width: 40vw;
+    }
 }
 
 #map {
@@ -157,6 +187,7 @@ footer a:link {
 
 .footer-copyright {
     text-align: right;
+    align-self: flex-end;
 }
 
 .info__bg {

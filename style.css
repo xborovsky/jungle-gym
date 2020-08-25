@@ -229,6 +229,12 @@ footer a:link {
 
 .contact-item-icon {
     color: #f59602;
+    position: relative;
+}
+
+.contact-item-icon img {
+    width: 60%;
+    margin: 0 auto;
 }
 
 .contact-item h3 {

@@ -1,33 +1,41 @@
 /* GENERAL STYLES */
 body {
-    background-image: url('./img/body_bg_sm.png');
-    background-repeat: no-repeat;
-    background-size: 100% 80vh;
     background-color: #efefef;
 }
 
+.header {
+    background-image: url('./img/body_bg_sm.png');
+    background-repeat: no-repeat;
+    background-size: 100% 120%;
+    padding-bottom: 2rem;
+}
+
+
 @media (min-width: 768px) {
-    body {
+    .header {
         background-image: url('./img/body_bg_md.png');
     }
 }
 
 @media (min-width: 992px) {
-    body {
+    .header {
         background-image: url('./img/body_bg_lg.png');
     }
 }
 
 @media (min-width: 1200px) {
-    body {
+    .header {
         background-image: url('./img/body_bg_xl.png');
     }
 }
 
-@media (orientation: landscape) {
-    body {
-        background-size: 100% 100vh;
-    }
+.header .container {
+    margin-top: 0;
+    margin-bottom: 0;
+}
+
+#info {
+    margin-top: 0;
 }
 
 h2 {
@@ -121,7 +129,7 @@ header {
 
 .logo {
     width: 70vw;
-    margin: 0 auto;
+    margin: 3rem auto 0;
     max-width: 444px;
 }
 

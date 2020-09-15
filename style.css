@@ -94,6 +94,7 @@ header {
 .nav-item {
     text-transform: uppercase;
     font-weight: 600;
+    padding-right: 10px;
 }
 
 .nav-item a {
@@ -123,6 +124,12 @@ header {
 
 #navbar-container.navbar-fixed-top .navbar-nav {
     padding-left: 10px;
+}
+
+@media (max-width: 768px) {
+    .nav-link {
+        padding: .3rem 1rem;
+    }
 }
 
 /* ---------------- */

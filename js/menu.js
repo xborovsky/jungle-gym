@@ -4,7 +4,7 @@ var menuDisplayHandler = (function() {
     var init = function(e) {
         $('.navbar-toggler, .nav-link').off('click');
         var width = e ? e.target.screen.width : $(window).width();
-        if (width < 768) {
+        if (width < 992) {
             showMobileMenu();
 
             $('.navbar-toggler, .nav-link').click(function() {

@@ -168,7 +168,7 @@ header {
     width: 100%;
 }
 
-#contact-email {
+.contact-email {
     unicode-bidi: bidi-override;
     direction: rtl;
 }

@@ -182,6 +182,7 @@ header {
 .contact-email {
     unicode-bidi: bidi-override;
     direction: rtl;
+    white-space: nowrap;
 }
 
 .contact-card .fa {
